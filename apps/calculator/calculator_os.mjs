@@ -1,11 +1,25 @@
-// calculator_os.mjs — bare bones test
+// calculator_os.mjs
 export default function CalculatorSkin() {
-  return document.createElement('div');
+  return (
+    <div style={{
+      position: 'fixed',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      background: '#000',
+      color: '#0f0',
+      border: '3px solid #0f0',
+      padding: '60px 100px',
+      fontSize: '48px',
+      fontFamily: 'monospace',
+      textAlign: 'center',
+      boxShadow: '0 0 40px #0f0',
+      textShadow: '0 0 20px #0f0'
+    }}>
+      Calculator
+      <div style={{fontSize:'24px', marginTop:'20px', opacity:0.7}}>
+        Lattice online
+      </div>
+    </div>
+  );
 }
-
-CalculatorSkin.prototype.render = function() {
-  this.element = document.createElement('div');
-  this.element.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:red;color:white;padding:50px;font-size:32px;font-family:Arial;border:3px solid white;';
-  this.element.textContent = 'Calculator';
-  return this.element;
-};
