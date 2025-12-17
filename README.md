@@ -1,5 +1,5 @@
 # ALL-MIND
-![ALL MIND Logo](images/image.jpg)
+<img src="images/image.jpg" alt="ALL MIND Logo" width="200" height="200"/>
 ### The CENTRAL-APPLICATION SOURCE of NODE | OS
 
 *Logic Streaming Infrastructure for the Web*
